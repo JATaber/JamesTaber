@@ -1,3 +1,8 @@
+$black: #000;
+$grey: #a0a0a0;
+$blue: #6fb3aa;
+$darkGrey: #303030;
+
 @mixin mq($size){
   @if $size == tablet{
     @media (min-width: 600px){@content;}
@@ -10,5 +15,5 @@
 //NavBar Styling
 
 .nav{
-  background-color: #333333;
+  background-color: $darkGrey;
 }
