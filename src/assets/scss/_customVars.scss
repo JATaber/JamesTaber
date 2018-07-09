@@ -1,0 +1,14 @@
+@mixin mq($size){
+  @if $size == tablet{
+    @media (min-width: 600px){@content;}
+  }
+  @else if $size == desktop{
+    @media (min-width: 1000px){@content;}
+  }
+}
+
+//NavBar Styling
+
+.nav{
+  background-color: #333333;
+}
