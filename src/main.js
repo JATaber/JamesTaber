@@ -6,10 +6,15 @@ import router from './router'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue'
 import BootstrapVue from 'bootstrap-vue'
-import Icon from 'vue-awesome/components/Icon'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faCode } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+library.add(faCode)
+
+Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.use(BootstrapVue)
-Vue.component('icon', Icon)
 
 Vue.config.productionTip = false
 
