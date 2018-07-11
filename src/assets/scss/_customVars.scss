@@ -1,7 +1,7 @@
-$black: #000;
-$grey: #a0a0a0;
-$blue: #6fb3aa;
-$darkGrey: #303030;
+$black: #2c2c2c;
+$silver: #4b6777;
+$gold: #ce9e62;
+$red: #846062;
 
 @mixin mq($size){
   @if $size == tablet{
@@ -11,9 +11,97 @@ $darkGrey: #303030;
     @media (min-width: 1000px){@content;}
   }
 }
+//body
+body{
+  background-color: $black !important;
+}
+
+//header area
+h1{
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+
+  svg{
+    color: $gold !important;
+  }
+}
 
 //NavBar Styling
 
 .nav{
-  background-color: $darkGrey;
+  background-color: $silver;
 }
+
+.nav-link{
+  font-size: 20px;
+  color: $gold !important;
+}
+
+.nav-link:hover{
+  color: #e9e9e9e9 !important;
+}
+
+.active > .nav-link{
+  color: #e9e9e9 !important;
+}
+
+.navbar-brand{
+  color: $gold !important;
+}
+
+//landing/Main page
+
+.paraAbout{
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/jamestaber-b329d.appspot.com/o/website-design-background-1.jpg?alt=media&token=56fb96ea-0c16-4d1c-b416-7dfe8ec42db6");
+  height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  h2{
+    padding-top: 50px !important;
+    color: $gold !important;
+  }
+
+  p{
+    color: $gold !important;
+    padding-bottom: 50px !important;
+  }
+}
+
+.paraBlog{
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/jamestaber-b329d.appspot.com/o/it-background-5.jpg?alt=media&token=7c0f4a30-ce6a-4789-9a23-7e14c153331b");
+  height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  h2{
+    color: $gold !important;
+  }
+}
+
+.paraProjects{
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/jamestaber-b329d.appspot.com/o/prog.gif?alt=media&token=b49fba44-ce12-4e4c-ac5c-c72338647404");
+  height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  h2{
+    color: $gold !important;
+  }
+}
+
+.paraContact{
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/jamestaber-b329d.appspot.com/o/contactTrue.jpg?alt=media&token=8ee4c930-6c9a-470a-ac1c-6d5b72a0fa3b");
+  height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
