@@ -10,11 +10,13 @@ import BootstrapVue from 'bootstrap-vue'
 import Vuelidate from 'vuelidate'
 import 'vue-awesome/icons'
 import Icon from 'vue-awesome/components/Icon'
+import Meta from 'vue-meta'
 
 Vue.component('icon', Icon)
 
 Vue.use(BootstrapVue)
 Vue.use(Vuelidate)
+Vue.use(Meta)
 
 // const isProd = process.env.NODE_ENV === 'production'
 

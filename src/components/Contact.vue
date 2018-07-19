@@ -7,8 +7,8 @@
           <b-card class="">
             <a href="http://twitch.tv/xalbia"><icon name="brands/twitch"></icon> twitch.tv/xalbia</a><br>
             <a href="http://www.youtube.com/channel/UCwJEDjd-4kOnbKTXqBauolQ/videos"><icon name="brands/youtube"></icon> YouTube Videos</a><br>
-            <a href="http://twitter.com/AwkwardKittyInc"><icon name="brands/twitter"></icon> twitter.com/AwkwardKittyInc</a><br>
-            <a href="https://github.com/JATaber"><icon name="brands/github"></icon> https://github.com/JATaber</a>
+            <a href="http://twitter.com/xalbia1"><icon name="brands/twitter"></icon> twitter.com/xalbia1</a><br>
+            <a href="https://github.com/JATaber"><icon name="brands/github"></icon> github.com/JATaber</a>
           </b-card>
           <b-card class="ml-auto">
             <b-form @submit="onSubmit" @reset="onReset" v-if="show" novalidate>
@@ -85,6 +85,14 @@ import { required, minLength, email } from 'vuelidate/lib/validators'
 
 export default {
   name: 'commentForm',
+  metaInfo: {
+    title: 'James Taber',
+    titleTemplate: '%s - Contact',
+    meta: [
+      {name: 'keywords', content: 'James Taber Resume, Web Dev on Twitch, Fort Smith, AR Website Designer'},
+      {name: 'description', content: 'This is the page you can inquire about my total Web Solutions (SEO, Front-End Dev, Server-side Dev, Full Stack Dev).'}
+    ]
+  },
   data () {
     return {
       form: {

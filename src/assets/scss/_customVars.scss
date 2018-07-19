@@ -82,7 +82,13 @@ h1{
   background-size: cover;
 
   h2{
+    padding-top: 50px !important;
     color: $gold !important;
+  }
+
+  p{
+    color: $gold !important;
+    padding-bottom: 50px !important;
   }
 }
 
@@ -95,7 +101,13 @@ h1{
   background-size: cover;
 
   h2{
+    padding-top: 50px !important;
     color: $gold !important;
+  }
+
+  p{
+    color: $gold !important;
+    padding-bottom: 50px !important;
   }
 }
 
@@ -106,6 +118,16 @@ h1{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  h2{
+    padding-top: 50px !important;
+    color: $gold !important;
+  }
+
+  p{
+    color: $gold !important;
+    padding-bottom: 50px !important;
+  }
 }
 
 //About page
