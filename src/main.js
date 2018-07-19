@@ -3,18 +3,28 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import VueAnalytics from 'vue-analytics'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue'
 import BootstrapVue from 'bootstrap-vue'
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faCode } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import Vuelidate from 'vuelidate'
+import 'vue-awesome/icons'
+import Icon from 'vue-awesome/components/Icon'
 
-library.add(faCode)
-
-Vue.component('font-awesome-icon', FontAwesomeIcon)
+Vue.component('icon', Icon)
 
 Vue.use(BootstrapVue)
+Vue.use(Vuelidate)
+
+// const isProd = process.env.NODE_ENV === 'production'
+
+Vue.use(VueAnalytics, {
+  id: 'UA-122573106-1',
+  router,
+  autoTracking: {
+    exception: true
+  }
+})
 
 Vue.config.productionTip = false
 

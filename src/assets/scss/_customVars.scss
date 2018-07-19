@@ -21,8 +21,11 @@ h1{
   padding-top: 40px !important;
   padding-bottom: 40px !important;
 
-  svg{
+  .fa-icon{
     color: $gold !important;
+    width: auto;
+    height: 2.5rem;
+    max-height: 100%;
   }
 }
 
@@ -104,4 +107,57 @@ h1{
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+//About page
+
+.paraAbout2{
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/jamestaber-b329d.appspot.com/o/website-design-background-1.jpg?alt=media&token=56fb96ea-0c16-4d1c-b416-7dfe8ec42db6");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  h1{
+    color: $gold !important;
+  }
+
+  h2{
+    padding-top: 50px !important;
+    color: $gold !important;
+  }
+
+  p{
+    color: $gold !important;
+    padding-bottom: 50px !important;
+
+    @include mq(tablet){
+      font-size: 20px;
+    }
+
+    @include mq(desktop){
+      font-size: 26px;
+    }
+  }
+}
+
+//Contact Page
+
+.paraContact2{
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/jamestaber-b329d.appspot.com/o/contactTrue.jpg?alt=media&token=8ee4c930-6c9a-470a-ac1c-6d5b72a0fa3b");
+
+  h1{
+    color: $gold !important;
+  }
+
+  .card-columns {
+    column-count: 1 !important;
+
+    @include mq(desktop){
+      column-count: 2 !important;
+    }
+  }
+}
+
+
 

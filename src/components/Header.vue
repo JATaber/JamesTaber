@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>
-      <font-awesome-icon icon="code"></font-awesome-icon> James Taber <font-awesome-icon icon="code"></font-awesome-icon>
+      <icon name="code"></icon> James Taber <icon name="code"></icon>
     </h1>
   </div>
 </template>
