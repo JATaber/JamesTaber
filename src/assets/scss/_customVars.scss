@@ -5,18 +5,35 @@ $red: #846062;
 
 @mixin mq($size){
   @if $size == tablet{
-    @media (min-width: 600px){@content;}
+    @media (min-width: 768px){@content;}
   }
   @else if $size == desktop{
-    @media (min-width: 1000px){@content;}
+    @media (min-width: 1198px){@content;}
   }
 }
-//body
+
+// body
 body{
   background-color: $black !important;
+
+  font-size: 16px !important;
+
+  @include mq(tablet){
+    font-size: 20px !important;
+  }
+
+  @include mq(desktop){
+    font-size: 24px !important;
+  }
 }
 
-//header area
+// footer
+footer{
+  height: 100px;
+  background-color: $black;
+}
+
+// header area
 h1{
   padding-top: 40px !important;
   padding-bottom: 40px !important;
@@ -24,149 +41,318 @@ h1{
   .fa-icon{
     color: $gold !important;
     width: auto;
-    height: 2.5rem;
+    height: 30px;
     max-height: 100%;
   }
 }
 
-//NavBar Styling
+// NavBar Styling
 
 .nav{
   background-color: $silver;
-}
 
-.nav-link{
-  font-size: 20px;
-  color: $gold !important;
-}
-
-.nav-link:hover{
-  color: #e9e9e9e9 !important;
-}
-
-.active > .nav-link{
-  color: #e9e9e9 !important;
-}
-
-.navbar-brand{
-  color: $gold !important;
-}
-
-//landing/Main page
-
-.paraAbout{
-  background-image: url("https://firebasestorage.googleapis.com/v0/b/jamestaber-b329d.appspot.com/o/website-design-background-1.jpg?alt=media&token=56fb96ea-0c16-4d1c-b416-7dfe8ec42db6");
-  height: 300px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  h2{
-    padding-top: 50px !important;
+  .nav-link{
+    font-size: 20px;
     color: $gold !important;
+
+    @include mq(tablet){
+      font-size: 24px;
+    }
   }
 
-  p{
+  .nav-link:hover{
+    color: #e9e9e9e9 !important;
+  }
+
+  .active > .nav-link{
+    color: #e9e9e9 !important;
+  }
+
+  .navbar-brand{
     color: $gold !important;
-    padding-bottom: 50px !important;
+
+    @include mq(tablet){
+      font-size: 24px;
+    }
+
+    .fa-icon{
+      color: $gold !important;
+      width: auto;
+      height: 16px;
+      max-height: 100%;
+
+      @include mq(tablet){
+        height: 20px;
+      }
+    }
+  }
+}
+
+// landing/Main page
+
+.paraAbout{
+  background: url("https://firebasestorage.googleapis.com/v0/b/jamestaber-b329d.appspot.com/o/website-design-background-1.jpg?alt=media&token=56fb96ea-0c16-4d1c-b416-7dfe8ec42db6") no-repeat center fixed;
+  height: 340px;
+  background-size: cover;
+
+  .container{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .jumbotron{
+    height: 300px !important;
+    background: rgba(44, 44, 44, 0.75) !important;
+
+    @include mq(tablet){
+      font-size: 18px;
+    }
+
+    @include mq(desktop){
+      font-size: 22px;
+    }
+
+    h2{
+      //padding-top: 50px !important;
+      color: $gold !important;
+
+      @include mq(tablet){
+        font-size: 32px;
+      }
+
+      @include mq(desktop){
+        font-size: 36px;
+      }
+    }
+
+    p{
+      color: $gold !important;
+      padding-bottom: 50px !important;
+      margin-bottom: 0;
+      text-align: left;
+
+      a{
+        color: $red;
+      }
+    }
   }
 }
 
 .paraBlog{
-  background-image: url("https://firebasestorage.googleapis.com/v0/b/jamestaber-b329d.appspot.com/o/it-background-5.jpg?alt=media&token=7c0f4a30-ce6a-4789-9a23-7e14c153331b");
-  height: 300px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url("https://firebasestorage.googleapis.com/v0/b/jamestaber-b329d.appspot.com/o/it-background-5.jpg?alt=media&token=7c0f4a30-ce6a-4789-9a23-7e14c153331b") no-repeat center fixed;
+  height: 340px;
   background-size: cover;
 
-  h2{
-    padding-top: 50px !important;
-    color: $gold !important;
+  .container{
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
-  p{
-    color: $gold !important;
-    padding-bottom: 50px !important;
+  .jumbotron{
+    height: 300px !important;
+    background: rgba(44, 44, 44, 0.75) !important;
+
+    @include mq(tablet){
+      font-size: 18px;
+    }
+
+    @include mq(desktop){
+      font-size: 22px;
+    }
+
+    h2{
+      padding-top: 50px !important;
+      color: $gold !important;
+      font-size: 26px;
+
+      @include mq(tablet){
+        font-size: 32px;
+      }
+
+      @include mq(desktop){
+        font-size: 36px;
+      }
+    }
+
+    p{
+      color: $gold !important;
+      padding-bottom: 50px !important;
+      text-align: left;
+
+      a{
+        color: $red;
+      }
+    }
   }
 }
 
 .paraProjects{
-  background-image: url("https://firebasestorage.googleapis.com/v0/b/jamestaber-b329d.appspot.com/o/prog.gif?alt=media&token=b49fba44-ce12-4e4c-ac5c-c72338647404");
-  height: 300px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url("https://firebasestorage.googleapis.com/v0/b/jamestaber-b329d.appspot.com/o/prog.gif?alt=media&token=b49fba44-ce12-4e4c-ac5c-c72338647404") no-repeat center fixed;
+  height: 340px;
   background-size: cover;
 
-  h2{
-    padding-top: 50px !important;
-    color: $gold !important;
+  .container{
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
-  p{
-    color: $gold !important;
-    padding-bottom: 50px !important;
+  .jumbotron{
+    height: 300px !important;
+    background: rgba(44, 44, 44, 0.75) !important;
+
+    @include mq(tablet){
+      font-size: 18px;
+    }
+
+    @include mq(desktop){
+      font-size: 22px;
+    }
+
+    h2{
+      padding-top: 50px !important;
+      color: $gold !important;
+
+      @include mq(tablet){
+        font-size: 32px;
+      }
+
+      @include mq(desktop){
+        font-size: 36px;
+      }
+    }
+
+    p{
+      color: $gold !important;
+      padding-bottom: 50px !important;
+      text-align: left;
+
+      a{
+        color: $red;
+      }
+    }
   }
 }
 
 .paraContact{
-  background-image: url("https://firebasestorage.googleapis.com/v0/b/jamestaber-b329d.appspot.com/o/contactTrue.jpg?alt=media&token=8ee4c930-6c9a-470a-ac1c-6d5b72a0fa3b");
-  height: 300px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url("https://firebasestorage.googleapis.com/v0/b/jamestaber-b329d.appspot.com/o/contactTrue.jpg?alt=media&token=8ee4c930-6c9a-470a-ac1c-6d5b72a0fa3b") no-repeat center fixed;
+  height: 340px;
   background-size: cover;
 
-  h2{
-    padding-top: 50px !important;
-    color: $gold !important;
+  .container{
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
-  p{
-    color: $gold !important;
-    padding-bottom: 50px !important;
-  }
-}
-
-//About page
-
-.paraAbout2{
-  background-image: url("https://firebasestorage.googleapis.com/v0/b/jamestaber-b329d.appspot.com/o/website-design-background-1.jpg?alt=media&token=56fb96ea-0c16-4d1c-b416-7dfe8ec42db6");
-  height: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  h1{
-    color: $gold !important;
-  }
-
-  h2{
-    padding-top: 50px !important;
-    color: $gold !important;
-  }
-
-  p{
-    color: $gold !important;
-    padding-bottom: 50px !important;
+  .jumbotron{
+    height: 300px !important;
+    background: rgba(44, 44, 44, 0.90) !important;
 
     @include mq(tablet){
-      font-size: 20px;
+      font-size: 18px;
     }
 
     @include mq(desktop){
-      font-size: 26px;
+      font-size: 22px;
+    }
+
+    h2{
+      padding-top: 50px !important;
+      color: $gold !important;
+
+      @include mq(tablet){
+        font-size: 32px !important;
+      }
+
+      @include mq(desktop){
+        font-size: 36px;
+      }
+    }
+
+    p{
+      color: $gold !important;
+      padding-bottom: 50px !important;
+      text-align: left;
+
+      a{
+        color: $red;
+      }
     }
   }
 }
 
-//Contact Page
+// About page
+
+.paraAbout2{
+  background: url("https://firebasestorage.googleapis.com/v0/b/jamestaber-b329d.appspot.com/o/website-design-background-1.jpg?alt=media&token=56fb96ea-0c16-4d1c-b416-7dfe8ec42db6") no-repeat center fixed;
+  background-size: cover;
+
+  .container{
+    padding-bottom: 20px;
+  }
+
+  .jumbotron{
+    background: rgba(44, 44, 44, 0.75) !important;
+    padding-top: 20px !important;
+    padding-bottom: 40px;
+
+    img{
+      width: 175px;
+      height: 175px;
+
+      @include mq(tablet){
+        width: 275px;
+        height: 275px;
+      }
+
+      @include mq(desktop){
+        width: 375px;
+        height: 375px;
+      }
+    }
+
+    h1{
+      color: $gold !important;
+    }
+
+    h2{
+      padding-top: 50px !important;
+      color: $gold !important;
+    }
+
+    p{
+      color: $gold !important;
+      padding-bottom: 50px !important;
+    }
+
+    .description{
+      text-align: left;
+    }
+  }
+}
+
+// Contact Page
 
 .paraContact2{
-  background-image: url("https://firebasestorage.googleapis.com/v0/b/jamestaber-b329d.appspot.com/o/contactTrue.jpg?alt=media&token=8ee4c930-6c9a-470a-ac1c-6d5b72a0fa3b");
+  background: url("https://firebasestorage.googleapis.com/v0/b/jamestaber-b329d.appspot.com/o/contactTrue.jpg?alt=media&token=8ee4c930-6c9a-470a-ac1c-6d5b72a0fa3b") no-repeat center fixed;
+  background-size: cover;
+  height: 950px;
+
+  .icon{
+    //padding-top: 9px;
+    height: 16px;
+    width: 16px;
+    vertical-align: middle;
+
+    @include mq(tablet){
+      height: 20px;
+      width: 20px;
+    }
+
+    @include mq(desktop){
+      height: 24px;
+      width: 24px;
+    }
+  }
 
   h1{
     color: $gold !important;
@@ -175,8 +361,154 @@ h1{
   .card-columns {
     column-count: 1 !important;
 
+    .socialLink{
+      background: rgba(44, 44, 44, 0.90) !important;
+
+      a{
+        color: $gold !important;
+      }
+    }
+
+    .contactForm{
+      background: rgba(44, 44, 44, 0.90) !important;
+
+      small{
+        color: $gold !important;
+      }
+
+      input{
+        background-color: $silver;
+        color: white;
+      }
+
+      .form-control{
+        @include mq(tablet){
+          font-size: 20px;
+        }
+      }
+
+      textarea{
+        background-color: $silver;
+        height: 300px;
+        color: white;
+      }
+
+      ::placeholder{
+        color: white;
+
+        @include mq(tablet){
+          font-size: 20px;
+        }
+      }
+
+      .btn-group{
+        display: flex !important;
+        justify-content: space-between;
+        margin-top: 20px;
+
+        .btn{
+          border-radius: 4px !important;
+          background-color: $red;
+
+          @include mq(tablet){
+            font-size: 20px;
+          }
+        }
+      }
+
+      label{
+        color: $gold !important;
+
+        @include mq(tablet){
+          font-size: 20px;
+        }
+      }
+
+      legend{
+        color: $gold !important;
+
+        @include mq(tablet){
+          font-size: 20px;
+        }
+      }
+    }
+
     @include mq(desktop){
       column-count: 2 !important;
+    }
+  }
+
+  .modal-header{
+    background-color: $black;
+    border-bottom: 0 !important;
+
+    h5{
+      color: white;
+      font-size: 18px !important;
+
+      @include mq(tablet){
+        font-size: 22px !important;
+      }
+
+      @include mq(desktop){
+        font-size: 26px !important;
+      }
+    }
+
+    .close{
+      color: white;
+      text-shadow: 0 1px 0 white !important;
+
+      @include mq(desktop){
+        font-size: 28px !important;
+      }
+    }
+  }
+
+  .modal-content{
+    width: 80% !important;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mq(tablet){
+      width: 100% !important;
+    }
+  }
+
+  .modal-body{
+    background-color: $silver;
+
+    h3{
+      color: $gold;
+      font-size: 16px !important;
+
+      @include mq(tablet){
+        font-size: 20px !important;
+      }
+
+      @include mq(desktop){
+        font-size: 24px !important;
+      }
+    }
+
+    .btn{
+      background-color: $red;
+      border-color: $gold;
+      font-size: 16px !important;
+
+      @include mq(tablet){
+        font-size: 20px !important;
+      }
+
+      @include mq(desktop){
+        font-size: 24px !important;
+      }
+    }
+
+    .btn:hover{
+      background-color: $gold;
+      border-color: $red;
+      color: $black;
     }
   }
 }

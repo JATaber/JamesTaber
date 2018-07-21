@@ -9,7 +9,7 @@
         <b-navbar-nav pills>
           <b-nav-item id="item" :class="{ 'active': $route.path == '/' }" href="/">Home</b-nav-item>
           <b-nav-item id="item" :class="{ 'active': $route.path == '/about' }" href="/about">About</b-nav-item>
-          <b-nav-item id="item" :class="{ 'active': $route.path == '/blog' }" href="/blog">Blog</b-nav-item>
+          <b-nav-item id="item" target="_blank" href="https://jamestaber806635694.wordpress.com">Blog</b-nav-item>
           <b-nav-item id="item" :class="{ 'active': $route.path == '/projects' }" href="/projects">Projects</b-nav-item>
           <b-nav-item id="item" :class="{ 'active': $route.path == '/contact' }" href="/contact">Contact</b-nav-item>
         </b-navbar-nav>
