@@ -1,5 +1,5 @@
 <template>
-  <div class="paraContact2">
+  <section class="paraContact2">
     <div class="container">
       <h1>CONTACT</h1>
       <b-container fluid>
@@ -74,7 +74,7 @@
         <b-btn class="mt-3" block @click="hide">OK</b-btn>
       </b-modal>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

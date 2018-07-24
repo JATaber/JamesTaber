@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <section>
     <article class="paraAbout">
       <div class="container">
         <div class="jumbotron">
@@ -42,7 +42,7 @@
         </div>
       </div>
     </article>
-  </div>
+  </section>
 </template>
 
 <script>

@@ -31,6 +31,11 @@ body{
 footer{
   height: 100px;
   background-color: $black;
+
+  p{
+    // text-align: center !important;
+    font-size: 14px;
+  }
 }
 
 // header area
@@ -326,6 +331,51 @@ h1{
 
     .description{
       text-align: left;
+    }
+  }
+}
+
+// Projects Page
+.paraProjects2{
+  background: url("https://firebasestorage.googleapis.com/v0/b/jamestaber-b329d.appspot.com/o/prog.gif?alt=media&token=b49fba44-ce12-4e4c-ac5c-c72338647404") no-repeat center fixed;
+  background-size: cover;
+  min-height: 1100px;
+
+  .jumbotron{
+    background: rgba(44, 44, 44, 0.75) !important;
+    padding-top: 20px !important;
+    // padding-bottom: 40px;
+
+    .card-columns{
+      column-count: 1;
+
+      @include mq(tablet){
+        column-count: 2;
+      }
+
+      @include mq(desktop){
+        column-count: 3;
+      }
+
+      .card{
+
+        .card-body{
+          background-color: $red;
+
+          .card-title{
+            color: white;
+          }
+
+          .card-text{
+            color: $gold;
+          }
+
+          iframe{
+            max-width: 100%;
+            height: auto;
+          }
+        }
+      }
     }
   }
 }
