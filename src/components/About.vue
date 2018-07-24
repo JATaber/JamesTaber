@@ -6,9 +6,15 @@
         <b-img rounded="circle"
                src="https://firebasestorage.googleapis.com/v0/b/jamestaber-b329d.appspot.com/o/JamesTaber.jpg?alt=media&token=f49e68c4-745f-454f-8128-cd9d874c3b7f"
                fluid alt="jamesTaber" class="m-1"></b-img>
-        <p>Hello! My name is James Taber.</p><p class="description">I am a 34 year old father and husband and I currently have a Bachelor of
+        <p>Hello! My name is James Taber.</p>
+        <a class="resume" href="https://firebasestorage.googleapis.com/v0/b/jamestaber-b329d.appspot.com/o/resume.pdf?alt=media&token=45637800-f5fc-4bad-a98b-35bd6842d0de" target="_blank">
+          <p class="resume">Download Resume</p></a>
+        <p class="description">I am a 34 year old father and husband and I currently have a Bachelor of
         Science of Web Design and Development from Full Sail University. I enjoy to spend time with my family, play video
         games, take road trips, and I also broadcast to Twith.tv when I am able to (<a href="https://twitch.tv/xalbia">Twitch.tv/xalbia</a>).
+          I excel with Node projects, especially with the MEVN stack, but I am knowledgeable in the LAMP, MERN, and MEAN stacks.
+          My degree consisted of C# for the first half of my degree, then it went on to include HTML, CSS, ES5 and ES6 JavaScript, SCSS, Bootstrap,
+          PHP, Codeigniter, Symfony, NODEjs, Express.js, React.js, Vue.js, MongoDB, MySql, Cypher, Discord.js, Docker, CircleCi, and Stripe.
         </p>
       </div>
     </div>

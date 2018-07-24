@@ -5,10 +5,13 @@
       <b-container fluid>
         <b-card-group columns>
           <b-card class="socialLink">
-            <a href="http://twitch.tv/xalbia"><icon class="icon" name="brands/twitch"></icon> twitch.tv/xalbia</a><br>
-            <a href="http://www.youtube.com/channel/UCwJEDjd-4kOnbKTXqBauolQ/videos"><icon class="icon" name="brands/youtube"></icon> YouTube Videos</a><br>
-            <a href="http://twitter.com/xalbia1"><icon class="icon" name="brands/twitter"></icon> twitter.com/xalbia1</a><br>
-            <a href="https://github.com/JATaber"><icon class="icon" name="brands/github"></icon> github.com/JATaber</a>
+            <a href="http://twitch.tv/xalbia" target="_blank"><icon class="icon" name="brands/twitch"></icon> twitch.tv/xalbia</a><br>
+            <a href="http://www.youtube.com/channel/UCwJEDjd-4kOnbKTXqBauolQ/videos" target="_blank"><icon class="icon" name="brands/youtube"></icon> YouTube Videos</a><br>
+            <a href="http://twitter.com/xalbia1" target="_blank"><icon class="icon" name="brands/twitter"></icon> twitter.com/xalbia1</a><br>
+            <a href="https://github.com/JATaber" target="_blank"><icon class="icon" name="brands/github"></icon> github.com/JATaber</a><br>
+            <a href="https://firebasestorage.googleapis.com/v0/b/jamestaber-b329d.appspot.com/o/resume.pdf?alt=media&token=45637800-f5fc-4bad-a98b-35bd6842d0de" target="_blank">
+              <icon class="icon" name="download"></icon> Resume
+            </a>
           </b-card>
           <b-card class="ml-auto contactForm">
             <b-form @submit="onSubmit" @reset="onReset" v-if="show" novalidate>

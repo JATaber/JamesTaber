@@ -28,13 +28,26 @@ body{
 }
 
 // footer
-footer{
-  height: 100px;
+.footer{
+  display: flex !important;
+  height: 75px;
   background-color: $black;
+  align-items: center !important;
+  justify-content: space-between;
+
+  .resume{
+    color: $red;
+  }
 
   p{
-    // text-align: center !important;
     font-size: 14px;
+
+    .icon {
+      //padding-top: 9px;
+      height: 16px;
+      width: 16px;
+      vertical-align: middle !important;
+    }
   }
 }
 
@@ -300,6 +313,15 @@ h1{
     padding-top: 20px !important;
     padding-bottom: 40px;
 
+    a{
+      color: $red;
+
+      .resume{
+        color: $red !important;
+        padding-bottom: 25px !important;
+      }
+    }
+
     img{
       width: 175px;
       height: 175px;
@@ -326,7 +348,7 @@ h1{
 
     p{
       color: $gold !important;
-      padding-bottom: 50px !important;
+      padding-bottom: 25px !important;
     }
 
     .description{
@@ -340,6 +362,7 @@ h1{
   background: url("https://firebasestorage.googleapis.com/v0/b/jamestaber-b329d.appspot.com/o/prog.gif?alt=media&token=b49fba44-ce12-4e4c-ac5c-c72338647404") no-repeat center fixed;
   background-size: cover;
   min-height: 1100px;
+  overflow: auto;
 
   .jumbotron{
     background: rgba(44, 44, 44, 0.75) !important;
@@ -385,7 +408,7 @@ h1{
 .paraContact2{
   background: url("https://firebasestorage.googleapis.com/v0/b/jamestaber-b329d.appspot.com/o/contactTrue.jpg?alt=media&token=8ee4c930-6c9a-470a-ac1c-6d5b72a0fa3b") no-repeat center fixed;
   background-size: cover;
-  height: 950px;
+  min-height: 950px;
 
   .icon{
     //padding-top: 9px;
@@ -481,6 +504,10 @@ h1{
           font-size: 20px;
         }
       }
+    }
+
+    @include mq(tablet){
+      column-count: 2 !important;
     }
 
     @include mq(desktop){
