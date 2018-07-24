@@ -14,8 +14,15 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "bootstrap-vue": "^2.0.0-rc.11",
+    "firebase": "^5.2.0",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-analytics": "^5.12.2",
+    "vue-awesome": "^3.0.5",
+    "vue-meta": "^1.5.2",
+    "vue-router": "^3.0.1",
+    "vue-youtube-embed": "^2.2.1",
+    "vuelidate": "^0.7.4"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
