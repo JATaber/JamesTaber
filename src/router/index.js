@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Landing from '@/components/Landing'
-import About from '@/components/About'
 import Projects from '@/components/Projects'
 import Contact from '@/components/Contact'
 
@@ -14,11 +13,6 @@ export default new Router({
       path: '/',
       name: 'Landing',
       component: Landing
-    },
-    {
-      path: '/about',
-      name: 'About',
-      component: About
     },
     {
       path: '/projects',

@@ -1,47 +1,23 @@
 <template>
-  <section>
-    <article class="paraAbout">
-      <div class="container">
-        <div class="jumbotron">
-          <h2>About</h2>
-          <p>Thanks for stopping by my portfolio. My name is James Taber.
-            I am a 34 year old graduate from Full Sail University, a father, and a husband. I completed Full Sails fast paced
-            Web Design and Development degree program while having a toddler and working a full time job.
-            To hear more about me and see my resume <a href="/about"><strong>click here</strong></a>.
-          </p>
-        </div>
+  <section class="paraAbout2">
+    <div class="container">
+      <div class="jumbotron">
+        <h1>WELCOME</h1>
+        <b-img rounded="circle"
+               src="https://firebasestorage.googleapis.com/v0/b/jamestaber-b329d.appspot.com/o/JamesTaber.jpg?alt=media&token=f49e68c4-745f-454f-8128-cd9d874c3b7f"
+               fluid alt="jamesTaber" class="m-1"></b-img>
+        <p>Hello! My name is James Taber.</p>
+        <a class="resume" href="https://firebasestorage.googleapis.com/v0/b/jamestaber-b329d.appspot.com/o/resume.pdf?alt=media&token=45637800-f5fc-4bad-a98b-35bd6842d0de" target="_blank">
+          <p class="resume">Download Resume</p></a>
+        <p class="description">I am a 34 year old father and husband and I currently have a Bachelor of
+        Science of Web Design and Development from Full Sail University. I enjoy to spend time with my family, play video
+        games, take road trips, and I also broadcast to Twith.tv when I am able to (<a href="https://twitch.tv/xalbia">Twitch.tv/xalbia</a>).
+          I excel with Node projects, especially with the MEVN stack, but I am knowledgeable in the LAMP, MERN, and MEAN stacks.
+          My degree consisted of C# for the first half of my degree, then it went on to include HTML, CSS, ES5 and ES6 JavaScript, SCSS, Bootstrap,
+          PHP, Codeigniter, Symfony, NODEjs, Express.js, React.js, Vue.js, MongoDB, MySql, Cypher, Discord.js, Docker, CircleCi, and Stripe.
+        </p>
       </div>
-    </article>
-    <article class="paraBlog">
-      <div class="container">
-        <div class="jumbotron">
-        <h2>Blog</h2>
-          <p>This is where I share my thoughts and knowledge on the Web Design and Development industry.
-            To read what I have written <a href="https://jamestaber806635694.wordpress.com" target="_blank"><strong>click here</strong></a> (Note: Link will take you to an external site).
-          </p>
-        </div>
-      </div>
-    </article>
-    <article class="paraProjects">
-      <div class="container">
-        <div class="jumbotron">
-          <h2>Projects</h2>
-          <p>This is where you can go to see the projects that I have worked on in the past and is a great way to see how my coding has evolved over time.
-            To take a look at these previous projects that I have worked on <a href="/projects"><strong>click here</strong></a>.
-          </p>
-        </div>
-      </div>
-    </article>
-    <article class="paraContact">
-      <div class="container">
-        <div class="jumbotron">
-          <h2>Contact</h2>
-          <p>This is where all of my social media links are located and a contact form is here if you have any questions or feedback of any kind.
-            To get a hold of me for any of the above mentioned <a href="/contact"><strong>click here</strong></a>.
-          </p>
-        </div>
-      </div>
-    </article>
+    </div>
   </section>
 </template>
 
@@ -49,9 +25,9 @@
 export default {
   metaInfo: {
     title: 'James Taber',
-    titleTemplate: '%s - Welcome!',
+    titleTemplate: '%s - Welcome',
     meta: [
-      {name: 'keywords', content: 'James Taber, Vuejs, Web Design and Development, Web Dev on Twitch, xalbia developer'},
+      {name: 'keywords', content: 'James Taber, Vuejs, Web Design and Development, Web Dev on Twitch, Fort Smith, Arkansas, Arkansas'},
       {name: 'description', content: 'James Taber is a Full Stack Web Designer and Developer who excels with the MEAN, MERN, and MEVN stacks and has a B.S. of Web Design and Development.'},
       {property: 'og:title', content: 'James Taber - Welcome'},
       {property: 'og:site_name', content: 'James Taber Portfolio'},

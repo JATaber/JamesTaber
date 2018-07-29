@@ -40,7 +40,15 @@ body{
   }
 
   p{
-    font-size: 14px;
+    font-size: 10px;
+
+    @include mq(tablet){
+      font-size: 14px;
+    }
+
+    @include mq(desktop){
+      font-size: 16px;
+    }
 
     .icon {
       //padding-top: 9px;
